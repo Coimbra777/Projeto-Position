@@ -1,0 +1,22 @@
+body {
+  height: 1200px;
+}
+
+/* ESTILOS BÁSICOS */
+div {
+  border: 2px solid #ccc;
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+}
+
+/* AQUI DESENVOLVE POSITION RELATIVE */
+span {
+  background: #e7e7e7;
+  border: 2px #ccc;
+  padding: 10px;
+  position: relative;
+  /* MUDAR POSIÇÃO */
+  top: -20px;
+}
+
+/* POSITION RELATIVO ESTÁ RELATIVO AO LOCAL ONDE ELE ESTÁ , OU SEJA, AINDA OCUPA O MESMO ESPAÇO DELE PORÉM AINDA ESTÁ NO FLUXO DA TELA */
