@@ -5,63 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cmc</title>
+  <title>Projeto</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <img src="./imagens/MARCA CYGILE PNG - PRETA-01.webp" alt="">
 
-  <!-- ESSA PARTE DESENVOLVE O MENU COM LINKS -->
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <img class="marca" src="./imagens/MARCA CYGILE PNG - PRETA-01.webp" alt="">
 
-  <div class="menu">
-    <a href="/">Sobre</a>
-    <a href="/">Produtos</a>
-    <a href="/">Lojas</a>
-    <a href="/">Contato</a>
-  </div>
+    <!-- ESSA PARTE DESENVOLVE O MENU COM LINKS NAVEGAÇÃO-->
+    <nav class="menu" aria-label="primaria">
+      <ul class="menu">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
   <!-- ESTE PARTE DESENVOLVE O CONTEÚDO -->
-  <div class="conteudo">
-    <!-- INTRUODUÇÃO DO SITE -->
-    <div class="introducao">
-      <!--  linha transversal -->
-      <span class="detalhe"></span>
-      <h1>Bicicletas Feita a Mão</h1>
-      <p>A cygile é a melhor concecionária de bikes artesanais. Nossas bikes já vem equipadas com os melhores acessórios da marca e ainda motor elétrico dos mais atuais, garantindo segurança e agilidade nas horas de laser e diversão. </p>
-      <!-- botao -->
-      <a class="botao" href="/">Ver Mais</a>
-    </div>
+  <main>
 
-    <img src="./imagens/bike.jpg" alt="bicicleta">
+
+    <!-- INTRUODUÇÃO DO SITE -->
+    <article class="conteudo">
+      <div class="introducao" aria-labelledby="label-introducao">
+        <!--  linha transversal -->
+        <h1 id="label-introducao">Bicicletas Feita a Mão</h1>
+        <p>A cygile é a melhor concecionária de bikes artesanais. Nossas bikes já vem equipadas com os melhores acessórios da marca e ainda motor elétrico dos mais atuais, garantindo segurança e agilidade nas horas de laser e diversão. </p>
+        <!-- botao -->
+        <a class="botao" href="/">Ver Mais</a>
+      </div>
+      <img src="./imagens/bike.jpg" alt="bicicleta">
+    </article>
 
     <!-- SEGUNDA PARTE DO CONTEÚDO -->
-    <h2 class="subtitulo">Vantagens Cygile</h2>
-    <div class="vantagens">
-      <div class="vantagens-item">
-        <img src="./imagens/eletrica.png.png" alt="">
-        <h3>Motor Elétrico</h3>
-        <p>Permite maior agilidade e conforto na tráfeco permitindo descanso.</p>
-      </div>
-      <div class="vantagens-item">
-        <img src="./imagens/quilometragem.png.png" alt="">
-        <h3>40 km/h</h3>
-        <p>Permite maior agilidade e conforto na tráfeco permitindo descanso.</p>
-      </div>
-      <div class="vantagens-item">
-        <img src="./imagens/rastreador.png.png" alt="">
-        <h3>Rastreador GPS</h3>
-        <p>Conta com sistema de geolocalização. Contribuindo para sua segurança e comodidade nas suas pedaladas</p>
-      </div>
-    </div>
-  </div>
+    <article class="conteudo" aria-labelledby="label-vantagens">
+      <h2 class="subtitulo" id="label-vantagens">Vantagens Cygile</h2>
+      <ul class="vantagens">
+        <li class="vantagens-item">
+          <img src="./imagens/eletrica.png.png" alt="">
+          <h3>Motor Elétrico</h3>
+          <p>Permite maior agilidade e conforto na tráfeco permitindo descanso.</p>
+        </li>
+        <li class="vantagens-item">
+          <img src="./imagens/quilometragem.png.png" alt="">
+          <h3>40 km/h</h3>
+          <p>Permite maior agilidade e conforto na tráfeco permitindo descanso.</p>
+        </li>
+        <li class="vantagens-item">
+          <img src="./imagens/rastreador.png.png" alt="">
+          <h3>Rastreador GPS</h3>
+          <p>Conta com sistema de geolocalização. Contribuindo para sua segurança e comodidade nas suas pedaladas</p>
+        </li>
+      </ul>
+    </article>
+  </main>
 
   <!-- Rodapé -->
 
-  <div class="rodape">
+  <footer class="rodape">
     <p>Alguns direitos reservados</p>
-  </div>
+  </footer>
 
 </body>
 
